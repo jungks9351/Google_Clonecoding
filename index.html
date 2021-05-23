@@ -6,21 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google_Homepage_Clonecoding</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="/css/reset.css">
 </head>
 <body>
-    <div class="header">
-        <div class="nav-bar">
-            <a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%26ogbl%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Gmail</a>
-            <a href="https://www.google.co.kr/imghp?hl=ko&ogbl">이미지</a>
-            <a href=""><img class="dots-logo" src="./image/9dots.png" alt="9dots"></a>
-            <a href="">로그인</a>
-        </div>
-    </div>
+    <header class="header">
+        <nav class="nav-bar">
+            <a href="#">Gmail</a>
+            <a href="#">이미지</a>
+            <a href="#"><img class="dots-logo" src="./image/9dots.png" alt="9dots"></a>
+            <a class="login-bar" href="#">로그인</a>
+        </nav>
+    </header>
     <h1 class="logo-container">
         <img class="google-logo" src="./image/googlelogo_color_272x92dp.png" alt="구글 로고">
     </h1>
-    <main class="search-container">
+    <section class="search-container">
         <div>
             <a href=""><img class="search-logo" src="./image/search.png" alt="search"></a>
             <input type="text">
@@ -31,7 +30,7 @@
             <input type="submit" value="Google 검색">
             <input type="submit" value="I'm Feeling Lucky">
         </div>
-    </main>
+    </section>
     <footer>
         <div>
         대한민국
