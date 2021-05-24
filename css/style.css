@@ -2,27 +2,42 @@
 
 html {
     font-size : 10px;
+    display: block;
+    box-sizing: border-box;
 }
 
 .header {
-    box-sizing: border-box;
+    width: auto;
+    height: 48px;
     padding: 6px;
 }
 
 .nav-bar {
-    width: 100%;
+    float: right;
+    height: 48px;
     padding: 4px;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-item-list {
+    display: flex;
+    padding-left: 0 4px;
+    list-style: none;
+    
+}
+
+.nav-item {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 15px;
 }
 
 a {
-    display: inline-block;
-    line-height: 24px;
-    display: inline-block;
-    padding-left: 15px;
     text-decoration: none;
-    color: #000;
+    color: #000000DE;
     background-color: #fff;
     font-size : 1.3rem;  
 }
@@ -34,48 +49,66 @@ a:hover {
 .dots-logo {
     width: 24px;
     height: 24px;
+    padding: 4px;
+    margin-left: 10px;
 }
 
 .login-bar {
-    width: 96px;
-    height: auto;
-    font-size: 1.4rem;
-    color: #fff;
-    background-color: #1a73e8;
-    margin: 0px 8px;
-    padding:9px 23px ;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 96px;
+    height: 36px;
+    line-height: 16px;
+    margin-right: 8px;
     border-radius: 4px;
+    color:#fff;
+    background-color: #1a73e8;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
 }
 
 .logo-container {
-    width: 100%;
-    height: auto;
+    min-height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     
 }
 
 .google-logo {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
     width: 272px;
     height : 92px;
-    /* display: flex;
-    justify-content: center;
-    align-items: flex-end; */
 }
 
 .search-container {
     width: 100%;
-    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction : column;
+    padding: 20px;
+
+}
+
+.search-input-bar {
+    margin-top: 37px;
+    font-size: 1.4rem;
+    border: 1px solid #dfe1e5;
+    border-radius: 20px;
+
 }
 .search-logo {
     width: 20px;
     height: 20px;
+}
+
+.text-bar {
+    border: none;
+    width: 447px;
+    height: 34px;
+    font-size: 1.6rem;
 }
 
 .voice-logo {
@@ -83,9 +116,52 @@ a:hover {
     height: 24px;
 }
 
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 0 0;
+}
+button {
+    height:  36px;
+    background-color: #f8f9fa;
+    color: #888b8d;
+    text-align: center;
+    margin-left: 15px;
+    padding: 0 16px;
+}
+
 footer {
-    position: absolute;
-    bottom: 0px;
     width: 100%;
-    height: auto;
+    position: absolute;
+    bottom: 0;
+    color: #8b8b8b;
+    background-color: #f2f2f2;
+    font-size: 1.5rem;
+}
+.country {
+    padding: 15px 30px;
+}
+
+.footer-bar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    padding: 0 20px;
+}
+
+.footer-bar-left > a {
+    display: inline-block;
+    padding: 15px;
+    color: #8b8b8b;
+    background-color: #f2f2f2;
+    font-size: 1.4rem;
+}
+
+.footer-bar-right > a {
+    display: inline-block;
+    padding: 15px;
+    color: #8b8b8b;
+    background-color: #f2f2f2;
+    font-size: 1.4rem;
 }
