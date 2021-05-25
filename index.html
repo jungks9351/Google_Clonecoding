@@ -4,39 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google_Homepage_Clonecoding</title>
+    <title>Google</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header class="header">
-        <nav class="nav-bar">
-            <ul class="nav-item-list">
-                <li class="nav-item"><a href="#">Gmail</a></li>
-                <li class="nav-item"><a href="#">이미지</a></li>
-                <li class="nav-item dots-logo">
-                    <svg class="gb_We" focusable="false" viewBox="0 0 24 24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg>
-                </li>
-                <li class="nav-item"><a class="login-bar" href="#">로그인</a></li>
-            </ul>
+        <nav class="nav">
+            <div class="nav-list1">
+                <button class="nav-btn1"><a href="#">Gmail</a></button>
+                <button class="nav-btn2"><a href="#">이미지</a></button>
+            </div>
+            <div class="nav-list2">
+                <button class="nav-btn3"><img class="dots" src="./image/9dots.png" alt=""></button>
+                <button class="nav-btn4"><a class="login" href="#">로그인</a></button>
+            </div>
         </nav>
     </header>
-    <section class="search-container">
-        <div class="logo-container">
-            <img class="google-logo" src="./image/googlelogo_color_272x92dp.png" alt="구글 로고">
-        </div>
-        <form action="get" class="search-bar">
-            <div class="search-input-bar">
-                <label for="search"><img class="search-logo" src="./image/search.png" alt="search"></label>
-                <input class="text-bar" type="text">
-                <a href="#"><img class="input-logo" src="./image/tia.png" alt="input-logo"></a>
-                <a href="#"><img class="voice-logo" src="./image/google-voice.png" alt="voice-logo"></a>
+    
+    <main class="main">
+        <section class="section1">
+            <img  class="google-logo" src="./image/googlelogo_color_272x92dp.png" alt="google">
+        </section>
+        <section class="section2">
+            <form class="search-form" method="">
+                <label for="search-text">
+                    <img class="search-png" src="./image/search.png" alt="search-png">
+                </label>
+                <input id="search-text" class="input-text" type="text">
+                <div class="search-help">
+                    <button class="keyboard-btn"><img src="./image/tia.png" alt="keybord-png"></button>
+                    <button class="voice-btn"><img src="./image/google-voice.png" alt="voice-png" class="voice"></button>
+
+                </div>
+            </form>
+            <div class="section-btns">
+                <button class="section-btn">Google 검색</button>
+                <button class="section-btn">I'm Feelig Lucky!</button>
             </div>
-            <div class="buttons">
-                <button>Google 검색</button>
-                <button>I'm Feeling Lucky</button>
-            </div>
-        </form>
-    </section>
+        </section>
+    </main>
+
     <footer>
         <div class="country">
         대한민국
