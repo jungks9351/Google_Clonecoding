@@ -1,15 +1,16 @@
+/* css reset */
 @import url(./reset.css);
 
 html {
     font-size: 10px;
 }
 
+/* header */
 .header {
     height: 48px;
     padding: 6px;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
 }
 
 .nav {
@@ -71,11 +72,13 @@ a:hover {
     text-decoration: none;
 }
 
+/* main */
 .main {
     width: 100%;
     height: auto;
 }
 
+/* section1 구글 로고 이미지 삽입 */
 .section1 {
     display: flex;
     justify-content: center;
@@ -88,6 +91,7 @@ a:hover {
     height: 92px;
 }
 
+/* section2 search-form css 작성 */
 .section2 {
     display: flex;
     justify-content: center;
@@ -96,8 +100,8 @@ a:hover {
     padding: 20px;
 }
 .search-form {
-    max-width: 584px;
-    height: 44px;
+    max-width: 70%;
+    min-width: 50%;
     border: 1px solid #e1e3e7;
     border-radius: 25px;
     display: flex;
@@ -107,6 +111,7 @@ a:hover {
     font-size: 1.4rem;
 }
 
+/* search-form 이미지, input  */
 .search-png {
     width: 20px;
     height: 20px;
@@ -135,7 +140,7 @@ a:hover {
     top: 53px;
     padding: 18px 0 0;
 }
-
+/* sectio btn */
 .section-btn {
     height:  36px;
     background-color: #f8f9fa;
@@ -147,6 +152,7 @@ a:hover {
     padding: 0 16px;
 }
 
+/* footer */
 footer {
     width: 100%;
     position: absolute;
